@@ -7,8 +7,8 @@
 # echo ""
 # read -p "Enter the list of models to download without spaces (7B,13B,70B,7B-chat,13B-chat,70B-chat), or press Enter for all: " MODEL_SIZE
 PRESIGNED_URL='https://download.llamameta.net/*?Policy=eyJTdGF0ZW1lbnQiOlt7InVuaXF1ZV9oYXNoIjoia2FxZm53aW5oYnRydGw2cTFvampwb2MxIiwiUmVzb3VyY2UiOiJodHRwczpcL1wvZG93bmxvYWQubGxhbWFtZXRhLm5ldFwvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTY5NjE0Nzk5Mn19fV19&Signature=ai32vjWmAy6Anak6%7ELt5EqNmnfRbxdQAaA1TqirUC6Sz0tXIPxMu7EBMsOkNdP6hCbhIbk7rbyOhjx0xN5UKQ0EmSTczdVN2y6pwL2V60BsODEaDA6mtZGJ%7Eb2vIsDYhy0%7EG6qcrRDB1IdBniT0Ydg9QT-xteEpfWpuik2IuuVB8esnG-crgYgRpZSr0R9EYk8MwNs6jZritQAgnc%7EyuYwWZP%7E4MaO0HEcEws-UXRGV1ZnIlktPjjOH%7ECNE77fAkqTdEKYt9CYzOta3SRCyn0B0RW-WHh-vtvBMFvZINoJBeHs0AWpUWm9L9GhGgJnKoQp439vObq3dFbAPUXDQHtg__&Key-Pair-Id=K15QRJLYKIFSLZ&Download-Request-ID=1265555064844203'
-MODEL_SIZE='7B'
-TARGET_FOLDER="."             # where all files should end up
+MODEL_SIZE='13B,70B,13B-chat,70B-chat'
+TARGET_FOLDER="/data/models/llama"             # where all files should end up
 mkdir -p ${TARGET_FOLDER}
 
 if [[ $MODEL_SIZE == "" ]]; then
